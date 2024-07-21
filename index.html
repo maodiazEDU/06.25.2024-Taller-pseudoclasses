@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller pseudo classes</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Taller Pseudo Classes</h1>
+    </header>
+
+    <h2>Lista</h2>
+    <ul class="pseudo-classes-list">
+        <!-- Pseudo-class :first-child -->
+        <li class="first">Primer elemento</li>
+        <!-- Pseudo-class :nth-child(even) y :nth-child(odd) -->
+        <li class="not-first">Segundo elemento</li>
+        <!-- Pseudo-class :nth-child(5) -->
+        <li class="not-first">Tercer elemento</li>
+        <li class="not-first">Cuarto elemento</li>
+        <li class="not-first">Quinto elemento</li>
+        <li class="not-first">Sexto elemento</li>
+        <li class="not-first">Séptimo elemento</li>
+        <!-- Pseudo-class :last-child -->
+        <li class="not-first">Último elemento</li>
+    </ul>
+
+    <h2>Formulario</h2>
+    <form>
+        <input type="text" placeholder="Foco aquí">
+        <input type="text" value="Estoy lleno">
+        <input type="text" placeholder="Hover aquí">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Vínculos</h2>
+    <a href="#" class="link visitado">Enlace visitado</a>
+    <a href="#" class="hover link">Pasa el ratón por aquí</a>
+    <a href="#">Enlace normal</a>
 </body>
 </html>

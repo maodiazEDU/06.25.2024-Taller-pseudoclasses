@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-left: 10%;
+}
+
+/* Eliminar el estilo por defecto de la lista y el padding */
+.pseudo-classes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo general para los elementos de la lista */
+.pseudo-classes-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+}
+
+/* Pseudo-classes */
+
+/* Estilo para el primer elemento de la lista */
+.pseudo-classes-list li:first-child {
+    background-color: #a7dadc;
+}
+
+/* Estilo para los elementos pares de la lista */
+.pseudo-classes-list li:nth-child(even) {
+    background-color: #6eac99;
+}
+
+/* Estilo para los elementos impares de la lista */
+.pseudo-classes-list li:nth-child(odd) {
+    background-color: #d0d0d0;
+}
+
+/* Estilo para el tercer elemento de la lista */
+.pseudo-classes-list li:nth-child(5) {
+    font-weight: bold;
+}
+
+/* Estilo para el último elemento de la lista */
+.pseudo-classes-list li:last-child {
+    border: 2px solid #000;
+}
+
+/* Estilo cuando se pasa el ratón por encima de cualquier elemento de la lista */
+.pseudo-classes-list li:hover {
+    background-color: #a0a0a0;
+}
+
+/* Estilo para el input cuando está en foco */
+input:focus {
+    border: 2px solid #00f;
+}
+
+/* Estilo para el input cuando su valor no es válido */
+input:invalid {
+    border: 2px solid #f00;
+}
+
+/* Estilo para el input cuando su valor es válido */
+input:valid {
+    border: 2px solid #0f0;
+}
+
+/* Estilo para el input cuando está vacío */
+input:empty {
+    background-color: #efe6de;
+}
+
+/* Estilo para el input cuando está seleccionado (aplica sólo a checkbox/radio) */
+input:checked {
+    background-color: #0ff;
+}
+
+/* Estilo para el input tipo texto cuando se pasa el ratón por encima */
+input[type="text"]:hover {
+    background-color: #0f0;
+}
+
+/* Estilo para el botón cuando está deshabilitado */
+button:disabled {
+    background-color: #888;
+}
+
+/* Estilo para los enlaces */
+
+/* Estilo para el enlace no visitado */
+a:link {
+    color: #00f;
+}
+
+/* Estilo para el enlace visitado */
+a:visited {
+    color: #800080;
+}
+
+/* Estilo para el enlace cuando se pasa el ratón por encima */
+a:hover {
+    color: #f00;
+}
+
+/* Estilo para el enlace cuando se hace clic en él */
+a:active {
+    color: #0f0;
+}
+
+/* Estilo para el texto seleccionado */
+::selection {
+    background-color: #ff0;
+    color: #000;
+}
+
+/* Estilo para la primera línea de un elemento de bloque */
+::first-line {
+    font-size: 1.2em;
+    color: #f00;
+}
+
+/* Estilo para la primera letra de un elemento de bloque */
+::first-letter {
+    font-size: 2em;
+    color: #00f;
+}
