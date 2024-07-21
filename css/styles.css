@@ -41,7 +41,7 @@ h1 {
 }
 
 /* Estilo para el tercer elemento de la lista */
-.pseudo-classes-list li:nth-child(3) {
+.pseudo-classes-list li:nth-child(5) {
     font-weight: bold;
 }
 
@@ -72,7 +72,7 @@ input:valid {
 
 /* Estilo para el input cuando está vacío */
 input:empty {
-    background-color: #ff0;
+    background-color: #efe6de;
 }
 
 /* Estilo para el input cuando está seleccionado (aplica sólo a checkbox/radio) */
